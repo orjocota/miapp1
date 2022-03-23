@@ -6,8 +6,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <h2>Orlando Contreras Tamayo</h2>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Hola Primer Desafio de la Clase # 1
         </p>
         <a
           className="App-link"
