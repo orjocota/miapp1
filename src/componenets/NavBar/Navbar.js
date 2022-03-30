@@ -1,8 +1,10 @@
 import React, {useState} from "react";
-import { FaShoppingBasket, FaBars, FaUserAstronaut } from 'react-icons/fa';
-import { Container, LogoContainer, Menu, MenuItem, MenuItemLink, MobileIcon, Wrapper } from "./Navbar-elements";
+import { FaShoppingBasket, FaBars, FaShoppingCart } from 'react-icons/fa';
+import { CarWidget, Container, LogoContainer, Menu, MenuItem, MenuItemLink, MobileIcon, Wrapper } from "./Navbar-elements";
 import { IconContext } from "react-icons/lib";
- const Navbar = () =>{
+
+
+const Navbar = () =>{
     const [showMobilMenu, setShowMobileMenu] = useState(false);
     
      return(
@@ -40,6 +42,12 @@ import { IconContext } from "react-icons/lib";
                         </MenuItemLink>
                      </MenuItem>
                  </Menu>
+                 <CarWidget>
+                    <FaShoppingCart/>
+                    <p>
+                        4
+                    </p>
+                 </CarWidget>
                  </IconContext.Provider>
              </Wrapper>
             

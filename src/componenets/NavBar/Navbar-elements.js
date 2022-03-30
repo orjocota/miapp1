@@ -90,7 +90,6 @@ export const MenuItemLink = styled.a`
     }
 
 `;
-
 export const MobileIcon = styled.div`
     display: none;
     @media screen and (max-width: 1010px){
@@ -103,6 +102,27 @@ export const MobileIcon = styled.div`
         svg{
             fill: orange;
         }
+    }
+`;
+export const CarWidget = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:10px;
+    margin:0 10px 0 0;
+    height:100%;
+
+    p{
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        margin: 0 0 0 10px;
+        font-size: 28px;
+        font-family: sans-serif;
+        color: #bbd6f1;
+    }
+    svg{
+        fill: orange;
     }
 `;
 
