@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Container = styled.div `
     width: 100%; 
-    height: 70px; 
+    height: 85px; 
     background-color: #001c52;
 `;
 export const Wrapper = styled.div`
@@ -18,21 +18,27 @@ export const Wrapper = styled.div`
 export const LogoContainer = styled.div`
     display: flex;
     align-items: center;
+    justify-content: center;
     font-family: sans-serif;
-    margin:20px 20px;
     cursor:pointer;
+    
     
     p{
         &:nth-child(2){
             font-size: 1.6rem;
             margin-left: 1.2rem;
             color: orange;
+            margin-top:5px;
         }
     }
 
-    svg{
-        fill: orange;
+    img{
+        width: 100px;
+        height: 70px;
+        mix-blend-mode: hard-light;
     }
+        
+       
 `;
 export const Menu = styled.ul`
     height: 100%;
@@ -121,8 +127,11 @@ export const CarWidget = styled.div`
         font-family: sans-serif;
         color: #bbd6f1;
     }
-    svg{
-        fill: orange;
-    }
+    img{
+        width:60px;
+        height:60px;
+                
+   }
+
 `;
 

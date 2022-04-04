@@ -1,7 +1,9 @@
 import React, {useState} from "react";
-import { FaShoppingBasket, FaBars, FaShoppingCart } from 'react-icons/fa';
+import { FaBars} from 'react-icons/fa';
 import { CarWidget, Container, LogoContainer, Menu, MenuItem, MenuItemLink, MobileIcon, Wrapper } from "./Navbar-elements";
 import { IconContext } from "react-icons/lib";
+import canastaLogo from "../../canastaLogo2-1.png";
+import canasta from "../../canasta.svg"
 
 
 const Navbar = () =>{
@@ -12,9 +14,9 @@ const Navbar = () =>{
              <Wrapper>
                  <IconContext.Provider value = {{style: {fontSize: "2.5em"}}}>                 
                 <LogoContainer>
-                    <FaShoppingBasket />
+                    <img src= {canastaLogo} alt="Logo"/>
                     <p>
-                        The O.C Market
+                        DEL HUERTO
                     </p>
                 </LogoContainer>
                 <MobileIcon onClick={()=>setShowMobileMenu(!showMobilMenu)}>
@@ -43,9 +45,9 @@ const Navbar = () =>{
                      </MenuItem>
                  </Menu>
                  <CarWidget>
-                    <FaShoppingCart/>
+                    <img src={canasta} alt="Canasta"/>
                     <p>
-                        4
+                        0
                     </p>
                  </CarWidget>
                  </IconContext.Provider>
