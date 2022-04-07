@@ -3,14 +3,45 @@
   padding: 0px;
   box-sizing: border-box;
 }
-body{
-  overflow: hidden;
-  background-color: #bbd6f1;
+.linkNav{
+  text-decoration: none;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0.2rem 1.8rem;
+  color:white;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  transition: 0.5s all ease;
+  cursor: pointer;  
+
 }
-.itemListTittle{
+.linkNav:hover{
+  color: #001c52;
+  background-color: white;
+  transition: 0.5s all ease;
+}
+@media screen and (max-width: 1010px){
+  .linkNav{
+    width: 100%;
+  }
+}
+.tomate{
+  width: 100px;
+  height: 100px;
+}
+.caja{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 300px;
+  height: 300px;
+  margin: 8px;
+}
+.container{
+  display: flex;
   width: 100%;
-  text-align: center;
-  margin-top: 50px;
-  font-size: 20px;
-  text-transform: uppercase;
+  height: auto;
+  flex-wrap: wrap;
 }

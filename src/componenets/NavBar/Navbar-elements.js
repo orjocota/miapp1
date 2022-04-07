@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
-
 export const Container = styled.div `
     width: 100%; 
-    height: 85px; 
+    height: 65px; 
     background-color: #001c52;
 `;
 export const Wrapper = styled.div`
@@ -20,21 +19,26 @@ export const LogoContainer = styled.div`
     align-items: center;
     justify-content: center;
     font-family: sans-serif;
-    cursor:pointer;
-    
+    cursor:pointer;    
     
     p{
         &:nth-child(2){
-            font-size: 1.6rem;
-            margin-left: 1.2rem;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction: column;
+            font-size: 1.3rem;
+            margin-left: 1.3rem;
             color: orange;
-            margin-top:5px;
+            margin-top:8px;
+            padding:5px;
         }
+    
     }
 
     img{
         width: 100px;
-        height: 70px;
+        height: 60px;
         mix-blend-mode: hard-light;
     }
         
@@ -72,30 +76,6 @@ export const MenuItem = styled.li`
         align-items: center;
     }
 `;
-export const MenuItemLink = styled.a`
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding: 0.5rem 2.5rem;
-    color: #bbd6f1;
-    font-family: sans-serif;
-    font-size: 1.4rem;
-    font-weight: 300;
-    transition: 0.5s all ease;
-    cursor: pointer;
-    
-    &:hover{
-        color: white;
-        background-color: #5776ba;
-        transition: 0.5s all ease;
-    }
-
-    @media screen and (max-width: 1010px){
-        width: 100%;
-    }
-
-`;
 export const MobileIcon = styled.div`
     display: none;
     @media screen and (max-width: 1010px){
@@ -123,15 +103,26 @@ export const CarWidget = styled.div`
         justify-content:center;
         align-items: center;
         margin: 0 0 0 10px;
-        font-size: 28px;
+        font-size: 20px;
         font-family: sans-serif;
         color: #bbd6f1;
     }
     img{
-        width:60px;
-        height:60px;
+        width:40px;
+        height:40px;
                 
    }
 
+`;
+export const MuralFondo = styled.section`
+    max-width:1500px;
+    height: 400px;
+    margin: 10px auto;
+
+    img{
+        width:100%;
+        height:100%;
+        background-position: center;
+    }
 `;
 
