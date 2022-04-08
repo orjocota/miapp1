@@ -9,9 +9,7 @@ import Contactos from "../src/page/contactos/contactos";
 import "./index.css";
 
 function App() {
-  // const handleOnAdd = (quantity) => {
-  //   console.log(`se Agregaron ${quantity} productos al Carrito`);
-  // };
+
 
   return (
     <>
@@ -24,7 +22,6 @@ function App() {
           <Route path="/Contactos" element={<Contactos/>} />
         </Routes>
       </Router>
-      {/* <ItemCount initial={1} stock={10} onAdd={handleOnAdd}/> */}
     </>
   );
 }

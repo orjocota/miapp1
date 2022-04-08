@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import { Section, Titulo, Button, Texto, Button2 } from './counterElements';
+import { Section, Button, Texto } from './counterElements';
 
 const ItemCount = ({initial, stock, onAdd}) => {
     let [numero, setNumero] = useState(1);
@@ -21,11 +21,9 @@ const ItemCount = ({initial, stock, onAdd}) => {
     }
     return (
         <Section>
-        <Titulo>Contador</Titulo>
         <Button onClick={aumentar}>+</Button>
         <Texto>{numero}</Texto>
-        <Button onClick={disminuir}>-</Button> 
-        <Button2 onClick={()=> onAdd(numero)}>Agregar al Carrito</Button2>       
+        <Button onClick={disminuir}>-</Button>   
         </Section>
         
     )

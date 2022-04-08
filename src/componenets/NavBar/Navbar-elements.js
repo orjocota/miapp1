@@ -4,6 +4,8 @@ export const Container = styled.div `
     width: 100%; 
     height: 65px; 
     background-color: #001c52;
+    position: fixed;
+    top: 0;
 `;
 export const Wrapper = styled.div`
    width: 100%;
@@ -115,14 +117,15 @@ export const CarWidget = styled.div`
 
 `;
 export const MuralFondo = styled.section`
-    max-width:1500px;
-    height: 400px;
-    margin: 10px auto;
+    max-width:1250px;
+    height: 300px;
+    margin: 75px auto;
 
     img{
         width:100%;
         height:100%;
         background-position: center;
+        background-size: cover;
     }
 `;
 

@@ -2,22 +2,17 @@ import styled from "styled-components";
 
 export const Section = styled.section`
   width: 100%;
-  text-align: center;
-  margin-top: 50px;
-  font-size: 20px;
-  text-transform: uppercase;
-`;
-export const Titulo = styled.h1`
-    font-size: 40px;
-    color: #001c52;
-    margin-bottom:20px;
+  text-align: center;  
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 export const Button = styled.button`
-    width: 80px;
+    width: 40px;
     height: 30px;
-    font-size:20px;
+    font-size:18px;
     border-radius:20px;
-    margin:0px;
     border: 2px solid #001c52;
     cursor: pointer;
 
@@ -28,8 +23,8 @@ export const Button = styled.button`
     }
 `;
 export const Texto = styled.p`
-    margin:20px;
-    font-size:25px;
+    margin:10px;
+    font-size:20px;
 `;
 export const Button2 = styled.button`
     display: block;
