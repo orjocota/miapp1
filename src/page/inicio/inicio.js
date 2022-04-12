@@ -6,7 +6,7 @@ const Inicio = () =>{
     <MuralFondo>
     <img src={imagenFondo} alt="ImagenDeFondo"/> 
     <Caja1>
-      PAGINA DE INICIO
+      PAGINA DE INICIO EN CONSTRUCCION
     </Caja1>
   </MuralFondo>
   )

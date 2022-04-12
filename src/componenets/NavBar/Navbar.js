@@ -12,9 +12,8 @@ import {
 import { IconContext } from "react-icons/lib";
 import canastaLogo from "../../canastaLogo2-1.png";
 import canasta from "../../canasta.svg";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../../index.css";
-
 
 const Navbar = () => {
   const [showMobilMenu, setShowMobileMenu] = useState(false);
@@ -34,24 +33,44 @@ const Navbar = () => {
           </MobileIcon>
           <Menu open={showMobilMenu}>
             <MenuItem>
-              
-                <Link to="/Inicio" className="linkNav">Inicio</Link>
-              
+              <NavLink
+                to="/Inicio"
+                className={({ isActive }) =>
+                  isActive ? "linkHold" : "linkNav"
+                }
+              >
+                Inicio
+              </NavLink>
             </MenuItem>
             <MenuItem>
-             
-                <Link to="/Tienda" className="linkNav">Tienda</Link>
-              
+              <NavLink
+                to="/Tienda"
+                className={({ isActive }) =>
+                  isActive ? "linkHold" : "linkNav"
+                }
+              >
+                Tienda
+              </NavLink>
             </MenuItem>
             <MenuItem>
-              
-                <Link to="/QuienesSomos" className="linkNav">Quienes Somos</Link>
-             
+              <NavLink
+                to="/QuienesSomos"
+                className={({ isActive }) =>
+                  isActive ? "linkHold" : "linkNav"
+                }
+              >
+                Quienes Somos
+              </NavLink>
             </MenuItem>
             <MenuItem>
-              
-                <Link to="/Contactos" className="linkNav">Contactos</Link>
-             
+              <NavLink
+                to="/Contactos"
+                className={({ isActive }) =>
+                  isActive ? "linkHold" : "linkNav"
+                }
+              >
+                Contactos
+              </NavLink>
             </MenuItem>
           </Menu>
           <CarWidget>
