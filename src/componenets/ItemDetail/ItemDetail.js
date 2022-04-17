@@ -1,7 +1,7 @@
 import ItemCount from "../counter/counter";
+import "../../index.css"
 
-
-const ItemDetail = (id,titulo, categoria, detalle, imagen, precio) => {
+const ItemDetail = (titulo, categoria, detalle, imagen, precio) => {
     const handleOnAdd = (quantity) => {
         console.log(`se Agregaron ${quantity} productos al Carrito`);
       }

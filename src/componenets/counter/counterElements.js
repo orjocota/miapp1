@@ -15,7 +15,6 @@ export const Button = styled.button`
     border-radius:20px;
     border: 2px solid #001c52;
     cursor: pointer;
-
     &:hover{
         background-color: #001c52;
         color: white;
@@ -35,10 +34,9 @@ export const Button2 = styled.button`
     border-radius:20px;
     border: 2px solid #001c52;
     cursor: pointer;
-
     &:hover{
         background-color: #001c52;
         color: white;
         border: 2px solid white;
-
+    }
 `;

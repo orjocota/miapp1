@@ -5,15 +5,14 @@ import ItemDetail from "../ItemDetail/ItemDetail";
 import "../../index.css";
 
 const ItemDetailContainer = () => {
-  const [product, setProduct] = useState();
- 
-  const {prodId} = useParams();console.log(useParams())
+  const [product, setProduct] = useState(); 
+  const {productoId} = useParams();
 
   useEffect(() => {
-    getProductsById(prodId).then(item => {
-      setProduct(item)
+    getProductsById(productoId).then(items => {
+      setProduct(items)
     })
-  }, [prodId])
+  }, [productoId])
 
   return (
     <>

@@ -1,58 +1,33 @@
-import React, { useState } from "react";
-import { FaBars } from "react-icons/fa";
-import {
-  CarWidget,
-  Container,
-  LogoContainer,
-  Menu,
-  MenuItem,
-  MobileIcon,
-  Wrapper,
-} from "./Navbar-elements";
-import { IconContext } from "react-icons/lib";
-import canastaLogo from "../../canastaLogo2-1.png";
-import canasta from "../../canasta.svg";
-import { NavLink } from "react-router-dom";
-import "../../index.css";
+import React from 'react'
+import { Caja_carrito, Caja_logo, Caja_menu, Header, Header_hijo, Menu_item } from './Navbar-Element'
+import logo from "../Imagenes/canastaLogo2-1.png"
+import canasta from "../Imagenes/canasta.svg"
+import { NavLink } from 'react-router-dom'
+import "../../index.css"
 
 const Navbar = () => {
-  const [showMobilMenu, setShowMobileMenu] = useState(false);
-
   return (
-    <Container>
-      <Wrapper>
-        <IconContext.Provider value={{ style: { fontSize: "2.5em" } }}>
-          <LogoContainer>
-            <img src={canastaLogo} alt="Logo" />
-            <p>
-              DEL<span>HUERTO</span>
-            </p>
-          </LogoContainer>
-          <MobileIcon onClick={() => setShowMobileMenu(!showMobilMenu)}>
-            <FaBars />
-          </MobileIcon>
-          <Menu open={showMobilMenu}>
-            <MenuItem>
+      <Header>
+          <Header_hijo>
+          <Caja_logo>
+              <img src={logo} alt="Logo"/>
+              <p>Del huerto</p>
+          </Caja_logo>
+          <Caja_menu>
+              <Menu_item>
+                
               <NavLink
-                to="/Inicio"
+                to="/inicio"
                 className={({ isActive }) =>
                   isActive ? "linkHold" : "linkNav"
                 }
               >
                 Inicio
               </NavLink>
-            </MenuItem>
-            <MenuItem>
-              <NavLink
-                to="/Tienda"
-                className={({ isActive }) =>
-                  isActive ? "linkHold" : "linkNav"
-                }
-              >
-                Tienda
-              </NavLink>
-            </MenuItem>
-            <MenuItem>
+                  
+              </Menu_item>
+              <Menu_item>
+                
               <NavLink
                 to="/QuienesSomos"
                 className={({ isActive }) =>
@@ -61,25 +36,41 @@ const Navbar = () => {
               >
                 Quienes Somos
               </NavLink>
-            </MenuItem>
-            <MenuItem>
+                  
+              </Menu_item>
+              <Menu_item>
+                
               <NavLink
-                to="/Contactos"
+                to="/productos"
+                className={({ isActive }) =>
+                  isActive ? "linkHold" : "linkNav"
+                }
+              >
+                Productos
+              </NavLink>
+                  
+              </Menu_item>
+              <Menu_item>
+                
+              <NavLink
+                to="/contactos"
                 className={({ isActive }) =>
                   isActive ? "linkHold" : "linkNav"
                 }
               >
                 Contactos
               </NavLink>
-            </MenuItem>
-          </Menu>
-          <CarWidget>
-            <img src={canasta} alt="Canasta" />
-            <p>0</p>
-          </CarWidget>
-        </IconContext.Provider>
-      </Wrapper>
-    </Container>
-  );
-};
-export default Navbar;
+            
+             </Menu_item>
+          </Caja_menu>
+          <Caja_carrito>
+              <img src={canasta} alt="Canasta"/>
+              <p>0</p>
+          </Caja_carrito>
+          </Header_hijo>
+      </Header>
+
+  )
+}
+
+export default Navbar

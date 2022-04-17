@@ -3,9 +3,9 @@ import { getVegetales } from "../../asyncMock";
 import ItemList from "../ItemList/ItemList";
 import { useParams } from "react-router-dom";
 
-const ItemListContainer = (props) => {
+const ItemListContainer = () => {
   const [prod1, setProd1] = useState([]);
-  const { categoriaId } = useParams();console.log(useParams())
+  const { categoriaId } = useParams();
 
   useEffect(() => {
     getVegetales(categoriaId).then(Productos => {

@@ -1,7 +1,7 @@
 
-    const productos =[
+    const vegetales =[
     {
-        "id":1,
+        id:"1",
         "titulo":"Tomate",
         "categoria":"Verduras",
         "detalle":"El Tomate Rambo es una variedad de aspecto redondo y tamaño medio que destaca por su sabor entre ácido y dulce dependiendo de su maduración, con unas betas negras que lo hacen fácilmente reconocible presente en nuestra fruteria desde el mes de Marzo hasta finales de Junio.",
@@ -9,7 +9,7 @@
         "precio": "$ 3.000/Kilo"
     },
     {
-        "id":2,
+        id:"2",
         "titulo":"Lechuga",
         "categoria":"verduras",
         "detalle":"El Tomate Rambo es una variedad de aspecto redondo y tamaño medio que destaca por su sabor entre ácido y dulce dependiendo de su maduración, con unas betas negras que lo hacen fácilmente reconocible presente en nuestra fruteria desde el mes de Marzo hasta finales de Junio.",
@@ -17,7 +17,7 @@
         "precio": "$ 2.500/Kilo"
     },
     {
-        "id":3,
+        id:"3",
         "titulo":"Aguacate",
         "categoria":"verduras",
         "detalle":"El Tomate Rambo es una variedad de aspecto redondo y tamaño medio que destaca por su sabor entre ácido y dulce dependiendo de su maduración, con unas betas negras que lo hacen fácilmente reconocible presente en nuestra fruteria desde el mes de Marzo hasta finales de Junio.",
@@ -25,7 +25,7 @@
         "precio": "$ 3.200/Kilo"
     },
     {
-        "id":4,
+        id:"4",
         "titulo":"Limones",
         "categoria":"verduras",
         "detalle":"El Tomate Rambo es una variedad de aspecto redondo y tamaño medio que destaca por su sabor entre ácido y dulce dependiendo de su maduración, con unas betas negras que lo hacen fácilmente reconocible presente en nuestra fruteria desde el mes de Marzo hasta finales de Junio.",
@@ -33,7 +33,7 @@
         "precio": "$ 1.800/Kilo"
     },
     {
-        "id":5,
+        id:"5",
         "titulo":"Papas",
         "categoria":"verduras",
         "detalle":"El Tomate Rambo es una variedad de aspecto redondo y tamaño medio que destaca por su sabor entre ácido y dulce dependiendo de su maduración, con unas betas negras que lo hacen fácilmente reconocible presente en nuestra fruteria desde el mes de Marzo hasta finales de Junio.",
@@ -41,7 +41,7 @@
         "precio": "$ 3.200/Kilo"
     },
     {
-        "id":6,
+        id:"6",
         "titulo":"Cebollas",
         "categoria":"verduras",
         "detalle":"El Tomate Rambo es una variedad de aspecto redondo y tamaño medio que destaca por su sabor entre ácido y dulce dependiendo de su maduración, con unas betas negras que lo hacen fácilmente reconocible presente en nuestra fruteria desde el mes de Marzo hasta finales de Junio.",
@@ -49,7 +49,7 @@
         "precio": "$ 2.300/Kilo"
     },
     {
-        "id":7,
+        id:"7",
         "titulo":"Platano Verde",
         "categoria":"verduras",
         "detalle":"El Tomate Rambo es una variedad de aspecto redondo y tamaño medio que destaca por su sabor entre ácido y dulce dependiendo de su maduración, con unas betas negras que lo hacen fácilmente reconocible presente en nuestra fruteria desde el mes de Marzo hasta finales de Junio.",
@@ -57,7 +57,7 @@
         "precio": "$ 1.950/Kilo"
     },
     {
-        "id":8,
+        id:"8",
         "titulo":"Zabahorias",
         "categoria":"verduras",
         "detalle":"El Tomate Rambo es una variedad de aspecto redondo y tamaño medio que destaca por su sabor entre ácido y dulce dependiendo de su maduración, con unas betas negras que lo hacen fácilmente reconocible presente en nuestra fruteria desde el mes de Marzo hasta finales de Junio.",
@@ -65,7 +65,7 @@
         "precio": "$ 1.500/Kilo"
     },
     {
-        "id":9,
+        id:"9",
         "titulo":"Calabacin",
         "categoria":"verduras",
         "detalle":"El Tomate Rambo es una variedad de aspecto redondo y tamaño medio que destaca por su sabor entre ácido y dulce dependiendo de su maduración, con unas betas negras que lo hacen fácilmente reconocible presente en nuestra fruteria desde el mes de Marzo hasta finales de Junio.",
@@ -73,7 +73,7 @@
         "precio": "$ 1.000/Kilo"
     },
     {
-        "id":10,
+        id:"10",
         "titulo":"Yuca",
         "categoria":"verduras",
         "detalle":"El Tomate Rambo es una variedad de aspecto redondo y tamaño medio que destaca por su sabor entre ácido y dulce dependiendo de su maduración, con unas betas negras que lo hacen fácilmente reconocible presente en nuestra fruteria desde el mes de Marzo hasta finales de Junio.",
@@ -81,7 +81,7 @@
         "precio": "$ 1.200/Kilo"
     },
     {
-        "id":11,
+        id:"11",
         "titulo":"Papa Criolla",
         "categoria":"verduras",
         "detalle":"El Tomate Rambo es una variedad de aspecto redondo y tamaño medio que destaca por su sabor entre ácido y dulce dependiendo de su maduración, con unas betas negras que lo hacen fácilmente reconocible presente en nuestra fruteria desde el mes de Marzo hasta finales de Junio.",
@@ -89,7 +89,7 @@
         "precio": "$ 1.350/Kilo"
     },
     {
-        "id":12,
+        id:"12",
         "titulo":"Lechuga Morada",
         "categoria":"verduras",
         "detalle":"El Tomate Rambo es una variedad de aspecto redondo y tamaño medio que destaca por su sabor entre ácido y dulce dependiendo de su maduración, con unas betas negras que lo hacen fácilmente reconocible presente en nuestra fruteria desde el mes de Marzo hasta finales de Junio.",
@@ -97,7 +97,7 @@
         "precio": "$ 2.550/Kilo"
     },
     {
-        "id": 13,
+        id: "13",
         "titulo":'Tomate Verde',
         "categoria":"verduras",
         "detalle":"El Tomate Rambo es una variedad de aspecto redondo y tamaño medio que destaca por su sabor entre ácido y dulce dependiendo de su maduración, con unas betas negras que lo hacen fácilmente reconocible presente en nuestra fruteria desde el mes de Marzo hasta finales de Junio.",
@@ -106,24 +106,33 @@
     }
 
 ]
+const categoria = [
+    {id: 'verduras', description: 'Verduras'},
+    {id: 'frutas', description: 'Frutas'},
+    {id: 'hortalizas', description: 'Hortalizas'}
+]
 
-
-export const getVegetales = (categoriaId) =>{
-    return new Promise (resolve => {
+export const getCategories = () => {
+    return new Promise(resolve => {
         setTimeout(() => {
-            resolve(categoriaId ? productos.filter(prod => prod.categoria === categoriaId): productos)
-            
-        }, 500);
-       
+            resolve(categoria)
+        }, 500)
     })
 }
-export const getProductsById = (id) =>{
+
+export const getVegetales = (categoryId) => {
     return new Promise (resolve => {
         setTimeout(() => {
-            resolve(productos.find(item => item.id == id))
-            
-           
-        }, 500);       
+            resolve(categoryId ? vegetales.filter(prod => prod.categoria === categoryId) : vegetales)
+        }, 500)
+    })
+}
+
+export const getProductsById = (id) => {
+    return new Promise (resolve => {
+        setTimeout(() => {
+            resolve(vegetales.find(prod => prod.id === id))
+        }, 500)
     })
 }
 

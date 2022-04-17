@@ -5,14 +5,14 @@ const ItemCount = ({initial, stock, onAdd}) => {
     let [numero, setNumero] = useState(1);
 
     function aumentar(){
-        if (numero < stock) {
+        if (numero < 10) {
             setNumero(numero + 1)
         }else{
             alert("No existen mas Elementos de este Tipo")
         }
     }
     function disminuir(){
-        if (numero > initial) {
+        if (numero > 1) {
             setNumero(numero - 1)
         }else{
             alert("No es un Valor Real")
@@ -30,4 +30,3 @@ const ItemCount = ({initial, stock, onAdd}) => {
 }
 
 export default ItemCount
-
