@@ -161,8 +161,10 @@ body{
   }
   .cuerpo_categorias{
     padding: 10px;
+    display: flex;
+    justify-content: center;
   }
-  .cuerpo_categorias button{
+  .button{
     padding: 5px 30px;
     margin-right: 50px;
     font-size: 23px;
@@ -172,11 +174,12 @@ body{
     color: #0c361f;
     border: 2px solid white;
     font-weight: 700;
+    text-decoration: none;
     
 
   }
-  .verduras{
-    height: 500px;
-    background-color: #001c52;
-    margin: 80px auto;
-  }
+.ItemDetailDetalle h1{
+  font-size: 30px;
+  text-align: center;
+  margin-top: 80px;
+}

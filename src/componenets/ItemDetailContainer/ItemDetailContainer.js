@@ -5,22 +5,37 @@ import ItemDetail from "../ItemDetail/ItemDetail";
 import "../../index.css";
 
 const ItemDetailContainer = () => {
-  const [product, setProduct] = useState(); 
-  const {productoId} = useParams();
+  const [product, setProduct] = useState();
+  const [loading, setLoading] = useState(true);
+  const { productoId } = useParams();
+  
 
   useEffect(() => {
-    getProductsById(productoId).then(items => {
-      setProduct(items)
-    })
-  }, [productoId])
+    getProductsById(productoId).then((items) => {
+      setProduct(items);
+    }).catch(err  => {
+      console.log(err)
+  }).finally(() => {
+      setLoading(false)
+  })
+
+  return (() => {
+      setProduct()
+  })
+  }, [productoId]);
 
   return (
-    <>
-      <div className="verduras">DETALLE</div>
-      <ItemDetail {...product} />
-    </>
+    <div className="ItemDetailDetalle" >
+      { 
+          loading ? 
+              <h1>Cargando...</h1> :
+              productoId ? 
+              <ItemDetail key={product} {...product} /> :
+              <h1>El producto no existe</h1> 
+      }
+      </div>
+
   );
 };
-
 
 export default ItemDetailContainer;

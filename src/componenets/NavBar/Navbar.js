@@ -3,9 +3,12 @@ import { Caja_carrito, Caja_logo, Caja_menu, Header, Header_hijo, Menu_item } fr
 import logo from "../Imagenes/canastaLogo2-1.png"
 import canasta from "../Imagenes/canasta.svg"
 import { NavLink } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import { getCategories } from '../../asyncMock'
 import "../../index.css"
 
 const Navbar = () => {
+
   return (
       <Header>
           <Header_hijo>

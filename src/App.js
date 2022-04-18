@@ -1,22 +1,26 @@
-import Navbar from "./componenets/NavBar/Navbar";
-import Inicio from "./componenets/Paginas/Inicio/Inicio";
-import Productos from "./componenets/Paginas/Productos/productos";
-import { Routes, Route } from "react-router-dom";
-import { BrowserRouter } from "react-router-dom";
-import ItemDetailContainer from "./componenets/ItemDetailContainer/ItemDetailContainer";
+import ItemDetailContainer from './componenets/ItemDetailContainer/ItemDetailContainer';
+import ItemListContainer from './componenets/ItemListContainer/ItemListContainer';
+import NavBar from "./componenets/NavBar/Navbar"
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Inicio from "./componenets/Paginas/Inicio/Inicio"
 
-function App() {
+
+const App = () => {
   return (
-    <>
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Inicio />} />
-          <Route path="/inicio" element={<Inicio />} />
-          <Route path="/productos/*" element={<Productos />} />
-        </Routes>
-      </BrowserRouter>
-    </>
+      <>
+        <BrowserRouter>
+          <NavBar />
+          <Routes>
+            <Route path='/' element={<Inicio />} />
+            <Route path='/inicio' element={<Inicio />} />
+            <Route path='/productos' element={<ItemListContainer />} />
+            <Route path='/category/:categoryId' element={<ItemListContainer />} />
+            <Route path='/productos/detail/:productoId' element={<ItemDetailContainer />} />
+            <Route path='*' element={<h1>NOT FOUND 404</h1>}/>
+          </Routes>
+        </BrowserRouter>
+        
+      </>
   );
 }
 
