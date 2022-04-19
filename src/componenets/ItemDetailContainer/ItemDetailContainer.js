@@ -8,7 +8,7 @@ const ItemDetailContainer = () => {
   const [product, setProduct] = useState();
   const [loading, setLoading] = useState(true);
   const { productoId } = useParams();
-  
+ 
 
   useEffect(() => {
     getProductsById(productoId).then((items) => {
@@ -30,7 +30,7 @@ const ItemDetailContainer = () => {
           loading ? 
               <h1>Cargando...</h1> :
               productoId ? 
-              <ItemDetail key={product} {...product} /> :
+              <ItemDetail {...product}/> :
               <h1>El producto no existe</h1> 
       }
       </div>

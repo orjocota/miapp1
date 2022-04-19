@@ -1,184 +1,181 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
 }
-body{
-    background-color: #c2c292;
+body {
+  background-color: #c2c292;
 }
 
 /*---------------------CSS de los  NAVLINK DEL NAVBAR----------------------------------*/
-.linkNav{
-    text-decoration: none;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding: 0.2rem 1.8rem;
-    color:white;
-    font-family: sans-serif;
-    font-size: 23px;
-    transition: 0.5s all ease;
-    cursor: pointer;  
-  
-  }
-  .linkNav:hover{
-    color: #0c361f;
-    background-color: #c2c292;
-    transition: 0.5s all ease;
-  
-  }
-  .linkHold{
-    text-decoration: none;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding: 0.2rem 1.8rem;
-    color:#0c361f;
-    font-weight: 700;
-    font-family: sans-serif;
-    font-size: 23px;
-    transition: 0.5s all ease;
-    cursor: pointer;
-    background-color: #c2c292;
-  
-  }
+.linkNav {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0.2rem 1.8rem;
+  color: white;
+  font-family: sans-serif;
+  font-size: 23px;
+  transition: 0.5s all ease;
+  cursor: pointer;
+}
+.linkNav:hover {
+  color: #0c361f;
+  background-color: #c2c292;
+  transition: 0.5s all ease;
+}
+.linkHold {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0.2rem 1.8rem;
+  color: #0c361f;
+  font-weight: 700;
+  font-family: sans-serif;
+  font-size: 23px;
+  transition: 0.5s all ease;
+  cursor: pointer;
+  background-color: #c2c292;
+}
 
-  /*-----------------------------------  CSS DE LAS TARJETAS DE PRODUCTOS----------------------------------*/
-  .container{
-    width: 100%;
-    max-width: 1300px;
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 10px;
-    margin: 60px auto 0px auto;
-  }
+/*-----------------------------------  CSS DE LAS TARJETAS DE PRODUCTOS----------------------------------*/
+.container {
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 60px auto 0px auto;
+}
 
-  .imagen-card{
-    width: 95%;
-    height: 150px;
-    margin: auto;
-    border-radius: 10px;
-  }
-  .caja-card{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 280px;
-    height: auto;
-    margin: 20px;
-    border: 3px solid #0c361f;
-    border-radius: 10px;
-    padding: 10px;
-    font-family: sans-serif;
-    letter-spacing: 0.03em;
-    line-height: 1.5;
-    /* background-color:rgb(195, 187, 187); */
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    transition: all 0.25s;  
-  }
-  .caja-card:hover{
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0,0,0,0.8);
-  
-  }
-  .titulo-card{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 22px;
-    color: #001c52;
-    margin: 15px 15px;
-    font-weight: 700;
-  }
-  .detalle-card{
-    margin:20px 0 20px 0;
-    color: #001c52;
-    font-weight: 700;
-  }
-  .precio-card{
-    margin: 15px 0 15px 0;
-    color: rgb(49, 48, 48);
-    font-weight: 700;
-    font-size: 25px;
-    text-align: center;
-  }
-  .button-carrito,
-  .button-detalle{
-    width: 60%;
-    margin: auto;
-    padding: 3px;
-    font-size: 18px;
-    margin-bottom: 5px;
-    background-color: #0c361f;
-    border: 2px solid white;
-    border-radius: 10px;
-    color: white;
-    cursor: pointer;
-    text-align: center;
-  }
-  .button-carrito:hover{
-    background-color: grey;
-    color: #001c52;
-    font-weight: 700;
-  }
-  .button-detalle:hover{
-    background-color: grey;
-    color: #001c52;
-    font-weight: 700;
-  }
-  .Link-detalles{
-    color: white;
-    text-decoration: none;
-  }
+.imagen-card {
+  width: 95%;
+  height: 150px;
+  margin: auto;
+  border-radius: 10px;
+}
+.caja-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 280px;
+  height: auto;
+  margin: 20px;
+  border: 3px solid #0c361f;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: sans-serif;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+  /* background-color:rgb(195, 187, 187); */
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: all 0.25s;
+}
+.caja-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.8);
+}
+.titulo-card {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 22px;
+  color: #001c52;
+  margin: 15px 15px;
+  font-weight: 700;
+}
+.detalle-card {
+  margin: 20px 0 20px 0;
+  color: #001c52;
+  font-weight: 700;
+}
+.precio-card {
+  margin: 15px 0 15px 0;
+  color: rgb(49, 48, 48);
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+}
+.button-carrito,
+.button-detalle {
+  width: 60%;
+  margin: auto;
+  padding: 3px;
+  font-size: 18px;
+  margin-bottom: 5px;
+  background-color: #0c361f;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+.button-carrito:hover {
+  background-color: grey;
+  color: #001c52;
+  font-weight: 700;
+}
+.button-detalle:hover {
+  background-color: grey;
+  color: #001c52;
+  font-weight: 700;
+}
+.Link-detalles {
+  color: white;
+  text-decoration: none;
+}
 
-  /*---------------------------------CSS AREA DE CATEGORIAS EN PRODUCTOS------------------------*/
+/*---------------------------------CSS AREA DE CATEGORIAS EN PRODUCTOS------------------------*/
 
-  .caja_categorias{
-    width: 90%;
-    height: auto;
-    margin: 90px auto 0px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border:2px solid #0c361f;
-    background-color: #0c361f;
-    border-radius: 10px;
-  }
-  .titulo_categorias{
-    font-size: 30px;
-    color: #c2c292;
-    font-family: sans-serif;
-    font-weight: 700;
-    padding: 10px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-  }
-  .cuerpo_categorias{
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-  }
-  .button{
-    padding: 5px 30px;
-    margin-right: 50px;
-    font-size: 23px;
-    cursor: pointer;
-    border-radius: 10px;
-    background-color: #c2c292;
-    color: #0c361f;
-    border: 2px solid white;
-    font-weight: 700;
-    text-decoration: none;
-    
+.caja_categorias {
+  width: 90%;
+  height: auto;
+  margin: 90px auto 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid #0c361f;
+  background-color: #0c361f;
+  border-radius: 10px;
+}
+.titulo_categorias {
+  font-size: 30px;
+  color: #c2c292;
+  font-family: sans-serif;
+  font-weight: 700;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.cuerpo_categorias {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.button {
+  padding: 5px 30px;
+  margin-right: 50px;
+  font-size: 23px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #c2c292;
+  color: #0c361f;
+  border: 2px solid white;
+  font-weight: 700;
+  text-decoration: none;
+}
 
-  }
-.ItemDetailDetalle h1{
+/*---------------------------------ESTILOS PARA LOS DETALLES--------------------------------------------*/
+
+.ItemDetailDetalle h1 {
   font-size: 30px;
   text-align: center;
   margin-top: 80px;

@@ -1,23 +1,22 @@
 import ItemCount from "../counter/counter"
-import "../../index.css"
+import "../../componenets/ItemDetail/ItemDetail.css"
 
-const ItemDetail = (id,titulo, categoria, detalle, imagen, precio) => {
+const ItemDetail = ({titulo, categoria, detalle, imagen, precio}) => {
     const handleOnAdd = (quantity) => {
         console.log(`se Agregaron ${quantity} productos al Carrito`);
       }
 
     return (
-        <div className="caja-card">
+        <div className="caja-card-detalle">
           <h2 className="titulo-card">{titulo}</h2>
           <img src={imagen} alt={titulo} className="imagen-card" />
-          <p>{categoria}</p>
+          <p>Categoria: {categoria}</p>
           <p className="precio-card">{precio}</p>
-          <p>{detalle}</p>
+          <p>Detalle: {detalle}</p>
           <ItemCount initial={1} stock={10} onAdd={handleOnAdd} />
           <button className="button-carrito">Add Carrito</button>
         </div>
       );
 
 }
-
 export default ItemDetail
