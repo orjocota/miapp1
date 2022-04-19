@@ -56,7 +56,7 @@ const Navbar = () => {
               <Menu_item>
                 
               <NavLink
-                to="/contactos"
+                to="/Contactos"
                 className={({ isActive }) =>
                   isActive ? "linkHold" : "linkNav"
                 }
