@@ -17,7 +17,7 @@ border-radius: 10px;
       flex-direction: column;
       font-size: 60px;
       text-transform: uppercase;
-      color: white;
+      color: orange;
 
       span{
 

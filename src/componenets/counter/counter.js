@@ -1,27 +1,8 @@
-import {useState, useEffect} from 'react'
-import { Section, Button, Texto } from './counterElements';
+import {useState} from 'react'
+import "./counterElements.css"
 
 const ItemCount = ({initial, stock, onAdd}) => {
-    let [numero, setNumero] = useState(1);
-
-    useEffect(() => {
-        let isActive = true
-
-        setTimeout(() => {
-            if(isActive) {
-                setNumero(10)       
-            }
-        }, 3000)
-
-        return (() => {
-            isActive = false
-            
-        })
-    })
-
-    useEffect(() => {
-        
-    }, [numero])
+    let [numero, setNumero] = useState(initial);
 
     function aumentar(){
         if (numero < stock) {
@@ -39,12 +20,18 @@ const ItemCount = ({initial, stock, onAdd}) => {
         
     }
     return (
-        <Section>
-        <Button onClick={aumentar}>+</Button>
-        <Texto>{numero}</Texto>
-        <Button onClick={disminuir}>-</Button>
-        <Button onClick={() => onAdd(numero)}>Agregar al carrito</Button>   
-        </Section>
+        <>
+        <div className='contador'>
+        <button onClick={aumentar}>+</button>
+        <span>{numero}</span>
+        <button onClick={disminuir}>-</button>
+        </div>
+
+        <div className='agregar-carro'>
+        <button onClick={() => onAdd(numero)}>Agregar al carrito</button>   
+        </div>
+        
+        </>
         
     )
 }

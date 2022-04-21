@@ -13,10 +13,15 @@ const ItemListContainer = () => {
     })
   }, [categoriaId])
 
+
+  const handleClick = () =>{
+    console.log('hice click en intemlistcontainer')
+  }
+
   return (
-    <>
+    <div onClick={handleClick}>
       <ItemList prod={prod1} />
-    </>
+    </div>
   );
 };
 
