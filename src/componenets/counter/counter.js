@@ -3,6 +3,7 @@ import "./counterElements.css"
 
 const ItemCount = ({initial, stock, onAdd}) => {
     let [numero, setNumero] = useState(initial);
+    
 
     function aumentar(){
         if (numero < stock) {

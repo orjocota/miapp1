@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 const Item = ({id, titulo, imagen, precio }) => {
   const handleClick = (e) => {
     e.stopPropagation()
-    console.log('Hice click en item')
 }
 
   return (

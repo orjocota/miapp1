@@ -14,8 +14,8 @@ const ItemListContainer = () => {
   }, [categoriaId])
 
 
-  const handleClick = () =>{
-    console.log('hice click en intemlistcontainer')
+  const handleClick = (e) =>{
+    e.stopPropagation()
   }
 
   return (

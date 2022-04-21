@@ -3,16 +3,20 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./ItemDetail.css";
 
-const ItemDetail = ({ titulo, categoria, detalle, imagen, precio }) => {
-  const [quantity, setCuantity] = useState(0)
+const ItemDetail = ({id, titulo, categoria, detalle, imagen, precio, setCart, cart }) => {
+  const [quantity, setCuantity] = useState(0);
 
-  const handleOnAdd = (numero) => {
-    setCuantity(numero)
-    console.log(`se Agregaron ${quantity} productos al Carrito`); 
-  };
+    const handleOnAdd = (numero) => {
 
-
-
+      setCuantity(numero)
+      const objProd = {
+        id, titulo, precio, quantity
+      }
+      setCart([...cart,objProd])
+      
+        
+    };
+  
   return (
     <div className="caja-card-detalle">
       <div className="img-card-detalle">        
