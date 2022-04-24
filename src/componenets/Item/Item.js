@@ -8,6 +8,7 @@ const Item = ({id, titulo, imagen, precio }) => {
     e.stopPropagation()
 }
 
+
   return (
     <>
       <div className="caja-card" onClick={handleClick}>

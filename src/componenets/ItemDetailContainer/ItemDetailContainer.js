@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import "../../index.css";
 
-const ItemDetailContainer = (setCart, cart) => {
+const ItemDetailContainer = ({setCart, cart}) => {
   const [product, setProduct] = useState();
   const [loading, setLoading] = useState(true);
   const { productoId } = useParams();

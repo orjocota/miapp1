@@ -1,13 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Caja_carrito, Caja_logo, Caja_menu, Header, Header_hijo, Menu_item } from './Navbar-Element'
 import logo from "../Imagenes/canastaLogo2-1.png"
 import canasta from "../Imagenes/canasta.svg"
 import { NavLink } from 'react-router-dom'
-import { useState, useEffect } from 'react'
-import { getCategories } from '../../asyncMock'
 import "../../index.css"
+import CartContext from '../../context/CartContext'
 
 const Navbar = () => {
+
+  const {getQuantity} = useContext(CartContext)
 
   return (
       <Header>
@@ -68,7 +69,7 @@ const Navbar = () => {
           </Caja_menu>
           <Caja_carrito>
               <img src={canasta} alt="Canasta"/>
-              <p>0</p>
+              <p>{getQuantity()}</p>
           </Caja_carrito>
           </Header_hijo>
       </Header>

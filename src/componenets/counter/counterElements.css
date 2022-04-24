@@ -2,6 +2,7 @@
     display: flex;
     justify-content:center;
     align-items: center;
+    margin-top: 30px;
 }
 .contador > button{
 text-align: center;
@@ -27,7 +28,7 @@ cursor: pointer;
     border: 2px solid white;
 }
 .agregar-carro button{
-    margin: 0px auto;
+    margin: 0px auto 20px auto;
     padding: 5px 30px;
     font-size: 30px;
     background-color: #0c361f;

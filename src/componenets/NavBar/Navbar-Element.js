@@ -16,7 +16,6 @@ export const Header_hijo = styled.div`
   text-align: center;
   margin: auto;
 `;
-
 export const Caja_logo = styled.div`
   display: flex;
   align-items: center;
@@ -29,7 +28,7 @@ export const Caja_logo = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: 1.6rem;
+    font-size: 2rem;
     margin-left: 1.3rem;
     color: orange;
     margin-top: 8px;
@@ -77,18 +76,22 @@ export const Caja_carrito = styled.div`
   align-items: center;
   margin-right: 10px;
   margin: 0 10px 0 0;
-  height: 100%;
+  height: 80%;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: green;
   p {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 0 10px 10px 10px;
-    font-size: 22px;
+    align-items: start;
+    margin: 0 10px 30px 5px;
+    font-size: 16px;
     font-family: sans-serif;
     color: white;
+    font-weight: 700;
   }
   img {
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
   }
 `;
