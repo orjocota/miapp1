@@ -27,7 +27,6 @@ export const Caja_logo = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     font-size: 2rem;
     margin-left: 1.3rem;
     color: orange;
@@ -53,9 +52,7 @@ export const Menu_item = styled.li`
 display: flex;
 justify-content: center;
 align-items: center;
-/* padding: 0px 15px; */
 height: 100%;
-/* margin-right: 10px; */
 color: white;
 font-size: 23px;
 cursor: pointer;
@@ -65,8 +62,6 @@ font-weight: 700;
     background-color: #c2c292;
     color: #0c361f;
     font-weight: 700;
-    /* padding: 0px 15px; */
-    /* margin-right: 10px; */
     font-size: 23px;
 }
 `;

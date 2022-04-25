@@ -172,7 +172,9 @@ body {
   font-weight: 700;
   text-decoration: none;
 }
-
+.Link{
+  text-decoration: none;
+}
 /*---------------------------------ESTILOS PARA LOS DETALLES--------------------------------------------*/
 
 .ItemDetailDetalle h1 {

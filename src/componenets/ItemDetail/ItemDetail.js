@@ -10,7 +10,7 @@ const ItemDetail = ({ id, titulo, categoria, detalle, imagen, precio }) => {
 
   const handleOnAdd = (numero) => {
     const prodObj = {
-      id, titulo, precio
+      id, titulo, precio, imagen
     }
     addItem({...prodObj, quantity: numero})
   };
@@ -26,7 +26,7 @@ const ItemDetail = ({ id, titulo, categoria, detalle, imagen, precio }) => {
         <p className="categoria">
           <span>Categoria: </span> {categoria}
         </p>
-        <p className="precio">{precio}</p>
+        <p className="precio">$ {precio}</p>
         <p className="detalle"> {detalle}</p>
         {isInCart(id) > 0 ? (
           <Link className="contador-irCarro" to="/cart">
