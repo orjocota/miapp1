@@ -20,14 +20,13 @@ const Cart = () => {
         <div>
             {
                 cart.map(prod => <ItemCart key={prod.id} {...prod}/>)
-                // {prod.map(vege => <Item key={vege.id} {...vege} />)}
             } 
         </div>
         <Link to="/productos" >
             <button className="button">Volver a Productos</button>
         </Link>        
         </div>
-        // {prod.titulo}  cantidad: {prod.quantity} precio uni: {prod.precio}  subtotal: {prod.quantity * prod.precio} <button onClick={() => removeItem(prod.id)}>X</button></ItemCart>)
+        
     )
 }
 

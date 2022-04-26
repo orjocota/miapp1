@@ -3,7 +3,7 @@ import "./counterElements.css"
 import { Link } from 'react-router-dom';
 import"../ItemDetail/ItemDetail.css"
 
-const ItemCount = ({initial, stock, onAdd}) => {
+const ItemCount = ({initial = 1, stock, onAdd}) => {
     let [numero, setNumero] = useState(initial);
     
 

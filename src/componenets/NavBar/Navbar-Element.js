@@ -6,6 +6,7 @@ export const Header = styled.header`
   height: 70px;
   position: fixed;
   top: 0;
+  z-index: 1;
 `;
 export const Header_hijo = styled.div`
   width: 90%;
