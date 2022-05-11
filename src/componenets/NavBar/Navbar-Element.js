@@ -50,21 +50,21 @@ export const Caja_menu = styled.ul`
   list-style: none;
 `;
 export const Menu_item = styled.li`
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100%;
-color: white;
-font-size: 23px;
-cursor: pointer;
-font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;
+  font-size: 23px;
+  cursor: pointer;
+  font-weight: 700;
 
-&:hover{
+  &:hover {
     background-color: #c2c292;
     color: #0c361f;
     font-weight: 700;
     font-size: 23px;
-}
+  }
 `;
 export const Caja_carrito = styled.div`
   display: flex;

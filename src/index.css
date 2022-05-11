@@ -96,6 +96,14 @@ body {
   color: #001c52;
   font-weight: 700;
 }
+.categori-card {
+  font-size: 20px;
+  color: #0c361f;
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 15px;
+}
 .precio-card {
   margin: 15px 0 15px 0;
   color: rgb(49, 48, 48);
@@ -160,19 +168,36 @@ body {
   display: flex;
   justify-content: center;
 }
-.button {
+.button1 {
   padding: 5px 30px;
   margin-right: 50px;
   font-size: 23px;
   cursor: pointer;
   border-radius: 10px;
-  background-color: #c2c292;
-  color: #0c361f;
+  background-color: #0c361f;
+  color: white;
   border: 2px solid white;
   font-weight: 700;
   text-decoration: none;
 }
-.Link{
+.button1:hover{
+  color: #0c361f;
+  background-color: #c2c292;
+  transition: 0.5s all ease;
+}
+.buttonHold{
+  padding: 5px 30px;
+  margin-right: 50px;
+  font-size: 23px;
+  cursor: pointer;
+  border-radius: 10px;  
+  color: #0c361f;
+  background-color: #c2c292;
+  border: 2px solid white;
+  font-weight: 700;
+  text-decoration: none;
+}
+.Link {
   text-decoration: none;
 }
 /*---------------------------------ESTILOS PARA LOS DETALLES--------------------------------------------*/
