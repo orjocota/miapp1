@@ -1,11 +1,13 @@
 import ItemCount from "../counter/counter";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import CartContext from "../../context/CartContext";
 import { Link } from "react-router-dom";
 import "./ItemDetail.css";
+import { useNotificacion } from "../Notificacion/Notificacion";
 
 const ItemDetail = ({ id, titulo, categoria, detalle, imagen, precio }) => {
   const { addItem, getQuantityProd } = useContext(CartContext);
+  const {setNotificacion} = useNotificacion()
 
   const handleOnAdd = (numero) => {
     const prodObj = {
@@ -15,6 +17,7 @@ const ItemDetail = ({ id, titulo, categoria, detalle, imagen, precio }) => {
       imagen,
     };
     addItem({ ...prodObj, quantity: numero });
+    setNotificacion("success", `Haz Agregado ${numero} ${titulo} al carrito de compras`)
   };
 
   return (

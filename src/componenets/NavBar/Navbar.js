@@ -51,14 +51,6 @@ const Navbar = () => {
               Productos
             </NavLink>
           </Menu_item>
-          <Menu_item>
-            <NavLink
-              to="/Contactos"
-              className={({ isActive }) => (isActive ? "linkHold" : "linkNav")}
-            >
-              Contactos
-            </NavLink>
-          </Menu_item>
         </Caja_menu>
         <Link to="/Cart" className="Link">
           <Caja_carrito>

@@ -32,10 +32,10 @@ const Inicio = () => {
   return (
     <>
       <Caja_fondo>
-        <h2>Algo de debe de poner aqui</h2>
-        <p>
-          Productos Frescos <span>de Alta Calidad.</span>
-        </p>
+        <h2>La mejor opcion...</h2>
+        <h3>
+          Productos Frescos <p className="alta">de Alta Calidad</p>
+        </h3>
         <p>Del Huerto a Tu Mesa.</p>
       </Caja_fondo>
       <H2>Nuestros Productos</H2>
@@ -118,15 +118,15 @@ const Inicio = () => {
           </Cont_enlace>
         </Contenedor_in>
         <Legalidad>
-          <span>
+          <div className="lega">
             <a href="#">Aviso Legal</a>
-          </span>
+          </div>
           <a href="#">Politica de Cookies</a>
         </Legalidad>
         <Footer_end>
-          <p>
-            Copyright @ 2021 - Diseño Web Realizado con React Js por{" "}
-            <span>Orlando Contreras.</span>{" "}
+          <p className="foot-end">
+            Copyright @ 2021 - Diseño Web Realizado con React Js por ORLANDO CONTRERAS.
+      
           </p>
         </Footer_end>
       </Footer>

@@ -1,4 +1,38 @@
 .container-quienes{
     margin: 80px;
-    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.quienes{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mision{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vision{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.titulos-quienes{
+    background-color: #0c361f;
+    color: white;
+    width: 100%;
+    border-radius: 10px;
+    margin: 40px 40px;
+    text-align: center;
+    font-size: 30px;
+    height: 50px;
+}
+p{
+    font-size: 22px;
 }

@@ -11,16 +11,47 @@ export const Caja_fondo = styled.section`
   width: 90%;
   height: 500px;
   margin: 90px auto 0px auto;
+  background-color: #d8deae;
 
-  p {
+  h2{
+    color: white;
+    font-size: 45px;
+    height: 100px;
+    margin-top: 20px;
+    text-align: center;
+    opacity: 0.8;
+
+  }
+
+  h3 {
     display: flex;
     flex-direction: column;
-    font-size: 60px;
+    font-size: 50px;
+    font-weight: 700;
     text-transform: uppercase;
-    color: orange;
+    color: white;
+    height: 150px;
+    opacity: 0.8;
 
-    span {
-    }
+    
+    .alta{
+    text-align: center;
+    padding: 30px;
+    opacity: 0.9;
+
+  }
+  }
+  p{
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    text-align: right;
+    padding: 30px;
+    opacity: 0.8;
+
   }
 `;
 export const H2 = styled.h2`
@@ -52,6 +83,7 @@ export const Caja_SubItems = styled.article`
     text-transform: uppercase;
     font-size: 30px;
     margin: 20px auto;
+
   }
 
   img {
@@ -158,7 +190,7 @@ export const Legalidad = styled.div`
   width: 80%;
   margin-top: 20px;
 
-  span {
+  .lega {
     border-right: 2px solid orange;
     border-left: 2px solid orange;
     color: white;
@@ -177,15 +209,15 @@ export const Footer_end = styled.div`
   border-top: 2px solid black;
   margin-top: 15px;
   background-color: #c2c292;
-  p {
+  .foot-end {
     text-align: center;
-    font-size: 18px;
+    font-size: 17px;
     color: #0c361f;
     font-family: sans-serif;
     font-weight: 700;
   }
-  span {
+  .name {
     color: #0c361f;
-    font-size: 20px;
+    font-size: 17px;
   }
 `;
